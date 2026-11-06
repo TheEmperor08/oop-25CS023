@@ -50,7 +50,7 @@ Either script:
 javac --release 17 -d out\classes src\main\java\exception\*.java src\main\java\model\*.java src\main\java\model\annotation\*.java src\main\java\util\*.java src\main\java\service\*.java
 jar cfm out\minibank.jar manifest.txt -C out\classes .
 javac --release 17 -d out\test-classes -cp "out\classes;lib\junit-platform-console-standalone-1.11.4.jar" src\test\java\service\*.java
-java -jar lib\junit-platform-console-standalone-1.11.4.jar execute --class-path "out\classes;out\test-classes" --scan-class-path
+java -jar lib\junit-platform-console-standalone-1.11.4.jar execute --class-path "out\classes;out\test-classes" --scan-class-path --disable-ansi-colors
 ```
 On Linux and macOS, use `/` in paths and `:` as the classpath separator.
 

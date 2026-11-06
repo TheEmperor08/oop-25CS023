@@ -14,4 +14,4 @@ if [ ! -f "$JUNIT" ]; then
     exit 0
 fi
 javac --release 17 -d "$OUT/test-classes" -cp "$OUT/classes:$JUNIT" $(find src/test/java -name '*.java')
-java -jar "$JUNIT" execute --class-path "$OUT/classes:$OUT/test-classes" --scan-class-path --details=tree --disable-banner
+java -jar "$JUNIT" execute --class-path "$OUT/classes:$OUT/test-classes" --scan-class-path --disable-ansi-colors --details=tree --disable-banner
