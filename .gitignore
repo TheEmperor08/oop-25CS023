@@ -1,0 +1,26 @@
+# Build output and compiled classes
+build/
+out/
+*.class
+*.jar
+
+# Runtime data produced by MiniBank (accounts.dat, logs, reports)
+data/
+logs/
+*.dat
+*.log
+
+# Submission material (Word reports, screenshots) - not pushed
+Submission/
+*.docx
+*.png
+
+# Local tooling (screenshot harness, downloaded JUnit jar)
+tools/
+
+# Misc
+practical 1
+.vscode/
+.idea/
+*.iml
+Thumbs.db
