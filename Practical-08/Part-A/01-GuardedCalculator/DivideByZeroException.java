@@ -1,0 +1,12 @@
+/**
+ * Practical 08 - Part A - Program 1: Guarded calculator.
+ * Checked exception thrown when a division by zero is attempted.
+ */
+public class DivideByZeroException extends Exception {
+
+    private static final long serialVersionUID = 1L;
+
+    public DivideByZeroException(String message) {
+        super(message);
+    }
+}
